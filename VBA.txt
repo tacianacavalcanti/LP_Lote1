@@ -1,0 +1,96 @@
+﻿Sub Lot01Atv01()
+'Calculo de area de quadrado'
+'Desenvolvedor: Taciana Cavalcanti'
+
+Dim lado As Integer
+Dim area As Integer
+
+lado = InputBox("Informe o valor do lado")
+area = lado ^ 2
+MsgBox "A area do quadrado é " & area
+End Sub
+Sub Lot01Atv02()
+'Calculo de aumento de salario'
+'Desenvolvedor: Taciana Cavalcanti'
+
+Dim salario As Double
+
+salario = InputBox("Informe o valor atual do salario")
+salario = salario + (salario * 0.15)
+MsgBox "O novo salario é " & salario
+
+End Sub
+Sub Lot01Atv03()
+'Calculo de area do triangulo'
+'Desenvolvedor: Taciana Cavalcanti'
+
+Dim base, altura, area As Integer
+
+base = InputBox("Informe a base do triangulo")
+altura = InputBox("informe a altura do triangulo")
+area = (base * altura) / 2
+MsgBox "A area do triangulo é " & area
+
+End Sub
+Sub Lot01Atv05()
+
+Dim C, F As Double
+
+C = InputBox("Informe a temperatura em graus Celsos")
+F = (9 * C + 160) \ 5
+MsgBox "A temperatura em Fahrenheit é " & F
+End Sub
+Sub Lot01Atv06()
+
+Dim troca, x, y As Integer
+
+x = InputBox("Informe o valor de x")
+y = InputBox("Informe o valor de y")
+troca = x
+x = y
+y = troca
+MsgBox "O valor de x é " & x & " O valor de y é " & y
+
+End Sub
+
+Sub Lot01Atv07()
+
+Dim comp, largura, altura, volume As Integer
+comp = InputBox("Informe comprimento")
+altura = InputBox("Informe altura")
+largura = InputBox("Informe largura")
+volume = comp * largura * altura
+MsgBox "O volume é " & volume
+
+
+End Sub
+Sub Lot01Atv08()
+
+Dim valorDeps, valorFinal As Double
+
+valorDeps = InputBox("Informe o valor do deposito")
+valorFinal = valorDeps + (valorDeps * 0.013)
+MsgBox "O valor atual na conta é " & valorFinal
+
+End Sub
+Sub Lot01Atv09()
+
+Dim num, ndois, reslv As Integer
+
+num = InputBox("Informe o 1° valor")
+ndois = InputBox("Informe o 2° valor")
+reslv = (num ^ 2) + (ndois ^ 2)
+MsgBox "O resutado é " & reslv
+
+End Sub
+
+
+Sub Lot01Atv010()
+
+Dim reslv, x, y As Integer
+x = InputBox("Informe o valor de x")
+y = InputBox("Informe o valor de y")
+reslv = x - y
+MsgBox "O resutado é " & reslv
+
+End Sub
