@@ -94,3 +94,69 @@ reslv = x - y
 MsgBox "O resutado é " & reslv
 
 End Sub
+
+Sub Lot01Atv011()
+
+Dim raio, circ As Double
+
+raio = InputBox("Informe o valor do raio")
+circ = 2 * 3.14 * raio
+MsgBox "O valor da circunferencia é " & circ
+
+End Sub
+Sub Lot01Atv012()
+
+Dim anoA, anoN, idAtual, idFinal As Integer
+
+anoA = InputBox("informe o ano atual")
+anoN = InputBox("informe o ano de nascimento")
+
+idAtual = anoA - anoN
+idFinal = idAtual + 17
+    
+MsgBox "A idade atual é " & idAtual & " Em 17 anos será " & idFinal
+
+End Sub
+Sub Lot01Atv013()
+
+Dim kgAlimentos As Double
+Dim diasConsu As Integer
+
+kgAlimentos = InputBox("Informe a quantidade em Kg")
+diasConsu = kgAlimentos / 0.05
+
+MsgBox "Os alimento serão consumentos em " & diasConsu & " dias"
+
+End Sub
+Sub Lot01Atv016()
+
+Dim horasTrab, valorHora, perctDesconto, numDescendentes, salBruto, salLiqu As Double
+
+horasTrab = InputBox("Informe as horas trabalhadas")
+valorHora = InputBox("Informe o valor da hora")
+perctDesconto = InputBox("informe o percentual de descondo")
+numDescendentes = InputBox("Informe o número de filhos")
+salBruto = horasTrab * valorHora
+    salLiqu = (salBruto * (perctDesconto * (salBruto / 100))) + (100 * numDescendentes)
+
+MsgBox "O valor do salario liquido é " & salLiqu
+
+
+End Sub
+
+Sub Lot01Atv017()
+
+Dim vUm, vDois, reslt As Double
+
+vUm = InputBox("Inform um valor")
+vDois = InputBox("Informe outro valor")
+
+If (vUm >= vDois) Then
+    reslt = vUm - vDois
+    Else
+    reslt = vDois - vUm
+End If
+
+MsgBox reslt
+
+End Sub
